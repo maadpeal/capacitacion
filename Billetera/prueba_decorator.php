@@ -34,3 +34,4 @@ $decorator500 = new Decorator500($decorator200, $mostrar);
 $decorator500 = programa_secreto($decorator500);
 
 $decorator500->mostrarEstadistica('all');
+//preguntar git
