@@ -82,7 +82,7 @@ final class BuscaMinasTest extends TestCase
     }
 
     public function testJugarEnTableroGigante()
-    {
+    {//para commit
         $this->setUp(10000, 10000);
         $this->assertTrue($this->buscaMinas->agregarMina(9999,9999));
     }
