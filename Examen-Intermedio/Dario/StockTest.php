@@ -13,7 +13,7 @@
  */
 include './vendor/autoload.php';
 include 'Stock.php';
-
+ 
 use PHPUnit\Framework\TestCase;
 
 final class StockTest extends TestCase

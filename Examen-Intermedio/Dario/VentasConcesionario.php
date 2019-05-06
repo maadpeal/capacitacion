@@ -1,5 +1,7 @@
 <?php
+
 include_once("Concesionaria.php");
+include_once("DecoratorVenta.php");
 
 /**
  * EJERCICIO 3
@@ -22,7 +24,7 @@ $marcas = array('FOR', 'Feat', 'Cachavrolet', 'Jonda', 'Tizan');
 $concesionario = new Concesionaria();
 
 // MODIFICAR ACA
-
+$concesionario = new DecoratorVenta($concesionario);
 // HASTA ACA
 
 for($i=0; $i<500; $i++) {
@@ -36,5 +38,8 @@ for($i=0; $i<20; $i++) {
 }
 
 // MODIFICAR ACA
+//var_dump($concesionario);
+echo 'El monto ganado es '. $concesionario->totalGanado() . "\n";
+echo 'El monto ganado por Cachavrolet es ' . $concesionario->ganancia();
 // ---- imprimir ganancias por Cachavrolet ----
 // Hasta aca

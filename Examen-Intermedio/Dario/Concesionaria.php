@@ -1,5 +1,7 @@
 <?php
 
+require_once 'ConcesionariaInterface.php';
+
 /**
  * "Concesionaria los mala onda"
  * 
@@ -12,7 +14,7 @@
  * inmediatamente se le hace el papelerio para venderle el auto más caro sin
  * que se entere el cliente.
  */
-class Concesionaria {
+class Concesionaria implements ConcesionariaInterface {
   private $_autos = array();
   private $_totalGanado = 0;
 
